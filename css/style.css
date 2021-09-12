@@ -652,6 +652,9 @@ header.header.hide {
 .ab_text p:not(:first-child) {
   margin-top: 7px;
 }
+.ab_text p a:hover{
+  text-decoration: underline;
+}
 /* about css end */
 /* my skills and experience css start */
 .light {
