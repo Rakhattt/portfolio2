@@ -1286,6 +1286,7 @@ form .contact_wrap_btn span:nth-child(4) {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
     padding-top: 100px;
+    justify-content: center;
   }
   .main_blog {
     margin-right: 0px;
