@@ -543,7 +543,7 @@ header.header.hide {
   }
 }
 /* .get:hover{
-      background-color: #d49f44;  
+      background-color: #d49f44;
   } */
 .get_wrapper {
   display: table;
@@ -652,7 +652,7 @@ header.header.hide {
 .ab_text p:not(:first-child) {
   margin-top: 7px;
 }
-.ab_text p a:hover{
+.ab_text p a:hover {
   text-decoration: underline;
 }
 /* about css end */
@@ -1087,6 +1087,31 @@ form .contact_wrap_btn span:nth-child(4) {
 .port_active {
   display: block;
 }
+.table-skills {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 130%;
+  margin-top: 15px;
+}
+.table-skills ul:first-child{
+  margin-right: 18px;
+}
+.my-skills li {
+  padding-bottom: 6px;
+  position: relative;
+}
+.my-skills li:before{
+  content:  "—";
+  position: absolute;
+  left:     -18px;
+}
+.skill-text {
+  color: #333333;
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
 @media screen and (max-width: 1500px) {
   .container {
     width: 1200px;
@@ -1110,6 +1135,12 @@ form .contact_wrap_btn span:nth-child(4) {
 @media screen and (max-width: 1350px) {
   .container {
     width: 1100px;
+  }
+  .about_wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   .tel {
     font-size: 0.9em;
@@ -1316,6 +1347,13 @@ form .contact_wrap_btn span:nth-child(4) {
   .container {
     width: 600px;
   }
+  .table-skills {
+    flex-direction: column;
+  }
+  .table-skills ul:first-child {
+    margin-right: 0px;
+    margin-bottom: 15px;
+  }
   header {
     padding: 15px 0;
   }
@@ -1391,12 +1429,6 @@ form .contact_wrap_btn span:nth-child(4) {
     -webkit-transform: rotate(45deg) translate(0px, 50%);
             transform: rotate(45deg) translate(0px, 50%);
   }
-  .about_wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
   .about_blog {
     margin-right: 0;
     width: 90%;
@@ -1428,6 +1460,9 @@ form .contact_wrap_btn span:nth-child(4) {
     display: -ms-flexbox;
     display: flex;
   }
+  .tel {
+    font-size: 1em;
+  }
 }
 @media screen and (max-width: 570px) {
   .container {
@@ -1437,9 +1472,6 @@ form .contact_wrap_btn span:nth-child(4) {
   }
   .under_nav {
     right: 20px;
-  }
-  .tel {
-    font-size: 1em;
   }
 }
 @media screen and (max-width: 500px) {
